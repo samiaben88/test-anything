@@ -1,0 +1,11 @@
+---
+pipeline: "workflows/node/CanaryReleaseStage/Jenkinsfile"
+buildName: "test-anything"
+codeReview: false
+links:
+  Git: "https://github.com/samiaben88/test-anything.git"
+  Job: "http://jenkins.sunseed.vagrant.f8/job/test-anything"
+  Staging: "http://172.30.123.10:80/kubernetes/pods?namespace=sunseed-staging"
+environments:
+  Staging: "sunseed-staging"
+useLocalFlow: true
